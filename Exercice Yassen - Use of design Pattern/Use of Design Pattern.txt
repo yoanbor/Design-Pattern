@@ -1,0 +1,32 @@
+Voici un exemple d'algorithme avec des if else imbriqués en JavaScript :
+
+// Un algorithme qui calcule le prix d'un produit en fonction de la quantité commandée et du type de client
+function calculerPrix(quantite, type) {
+  let prix = 0;
+  if (type === "normal") {
+    // Si le client est normal, il paie le prix unitaire de 10 euros
+    prix = quantite * 10;
+  } else if (type === "premium") {
+    // Si le client est premium, il a une réduction de 10% si la quantité est supérieure à 10
+    if (quantite > 10) {
+      prix = quantite * 10 * 0.9;
+    } else {
+      prix = quantite * 10;
+    }
+  } else if (type === "vip") {
+    // Si le client est vip, il a une réduction de 20% si la quantité est supérieure à 20, ou de 15% sinon
+    if (quantite > 20) {
+      prix = quantite * 10 * 0.8;
+    } else {
+      prix = quantite * 10 * 0.85;
+    }
+  } else {
+    // Si le type de client est inconnu, on renvoie une erreur
+    throw new Error("Type de client invalide");
+  }
+  return prix;
+}
+
+
+
+Voici un algo ou il y a trop de if et else imbriqué à mon gout. Résoudre le problème en identifiant le ou les design Pattern susceptible de résoudre le problème et faire l'implémentation en JS.

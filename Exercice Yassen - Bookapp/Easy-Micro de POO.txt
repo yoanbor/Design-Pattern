@@ -1,0 +1,27 @@
+Exercice Easy-Micro de POO Javascript :
+Créez une application appelée RestfulReading (Lecture reposante), qui permettra aux utilisateurs de suivre les livres qu'ils sont en train de lire ou qu'ils ont lus.
+
+Votre tâche est de créer la classe Book (Livre) et de remplir la base de données de développement de trois ou quatre livres.
+
+La classe Book doit contenir les champs suivants :
+title - string - le titre du livre
+author - string - l'auteur du livre
+description - string - une description du livre
+pages - number - le nombre total de pages
+currentPage - number - la page où se trouve l'utilisateur actuellement (entre 1 et pages)
+read - boolean - si l'utilisateur a lu ou non le livre (par défaut: false)
+
+La classe Book doit aussi contenir les méthodes instance suivantes :
+readBook(page). Cette instance permet à l'utilisateur de dire à quelle page il se trouve actuellement
+getTitle(). Cette instance renvoie le titre du livre.
+setTitle(title). Cette instance modifie le titre du livre.
+
+La classe Library doit contenir les champs suivants :
+books - array - un tableau d'objets de la classe Book
+
+La classe Library doit aussi contenir les méthodes instance suivantes :
+addBook(book). Cette instance ajoute un objet de la classe Book au tableau books.
+removeBook(book). Cette instance supprime un objet de la classe Book du tableau books.
+displayBooks(). Cette instance affiche tous les titres des livres dans le tableau books.
+
+Dans la classe Library, les objets de la classe Book sont stockés dans un tableau. La classe Library est composée d'objets de la classe Book. La classe Library a des méthodes pour ajouter et supprimer des livres, ainsi qu'une méthode pour afficher tous les livres de la bibliothèque.
